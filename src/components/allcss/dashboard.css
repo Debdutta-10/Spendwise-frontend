@@ -1,0 +1,86 @@
+.alltran {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mytransaction {
+    width: 80%;
+    border: 2px solid white;
+    background-color: #fcf6f9;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px
+}
+
+.graph {
+    width: 100%;
+}
+
+.dashrec {
+    width: 80%;
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 355px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.alldisplay {
+    width: 80%;
+    border: 2px solid white;
+    background-color: #fcf6f9;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width:769px) {
+    .alltran {
+        display: flex;
+        flex-direction: column;
+    }
+    .mytransaction{
+        padding: 4px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .mytransaction h2{
+        font-size: 1.1rem;
+    }
+    .dashrec {
+        width: 100% !important;
+        overflow: hidden;
+        max-height: none;
+        margin: auto;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
+
+    .alldisplay {
+        width: 60%;
+        padding: 4px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .alldisplay h2 {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .expheading{
+        text-align: center;
+    }
+    .incheading{
+        text-align: center;
+    }
+}

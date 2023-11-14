@@ -1,0 +1,1 @@
+export const API_URL = 'https://spendwise-backend-e2cs.onrender.com'

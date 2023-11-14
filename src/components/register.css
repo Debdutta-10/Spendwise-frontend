@@ -1,0 +1,68 @@
+.main-container2 {
+    margin-top: 3% !important;
+    margin: auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    color: #222260;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0 0px 20px rgba(250,250,250,255);
+    padding: 15px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.sc2 {
+    width: 80%;
+    margin: 10px 0;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: left;
+}
+
+label {
+    display: block;
+    margin: 3px;
+}
+input.checkbox{
+    width: 20px;
+}
+
+input, button {
+    padding: 8px;
+    margin: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button.login2 {
+    margin: 5px;
+    margin-left: 16px;
+    padding: 10px;
+    width: 80%;
+    background-color: #222260;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:769px){
+    .main-container2 {
+        margin-top: 5% !important;
+        margin: auto;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+}

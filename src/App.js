@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
-
+import Login from './components/Login';
+import Register from './components/Register';
+import Navbar from './components/Navbar'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Income from './components/Income';
+import Expenses from './components/Expenses';
+import Dashboard from './components/Dashboard';
 function App() {
+
+  const info = localStorage.getItem('user');
+
+  const [user,setUser] = useState(JSON.parse(info));
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+      <Navbar></Navbar>
+      <Routes>
+        <Route path='/' element={<Dashboard></Dashboard>}></Route>
+        <Route path='/login' element={<Login user={user} setUser={setUser}></Login>}></Route>
+        <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/incomes' element={<Income></Income>}></Route>
+        <Route path='/expenses' element={<Expenses></Expenses>}></Route>
+        <Route></Route>
+      </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 

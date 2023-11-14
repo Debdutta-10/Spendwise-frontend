@@ -1,0 +1,210 @@
+.totalincome {
+    border: 2px solid white;
+    background-color: #fcf6f9;
+    border-radius: 20px;
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px
+}
+
+.totalincome h2 {
+    text-align: center;
+}
+
+.mci {
+    display: flex;
+}
+
+.form {
+    margin-top: 40px;
+    width: 45%;
+    margin-left: 50px;
+}
+
+.fi {
+    border: 2px solid white;
+    background-color: #f9f0f3;
+    border-radius: 10px;
+    width: 60%;
+    margin-left: 0px;
+    color: #8683a6;
+}
+
+.form select {
+    padding: 10px;
+    border: 2px solid white;
+    background-color: #f9f0f3;
+    border-radius: 10px;
+    display: block;
+    margin-top: 10px;
+    color: #8683a6;
+}
+
+.form textarea {
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: #f9f0f3;
+    border-radius: 10px;
+    display: block;
+    resize: none;
+    color: #8683a6;
+}
+
+.incomebut {
+    width: 25%;
+    background: #b6577e;
+    padding: 10px;
+    border: none;
+    border-Radius: 10px;
+    margin-Top: 10px;
+    color: white;
+    font-Size: "15px"
+}
+
+.incomebut:hover {
+    cursor: pointer;
+}
+
+.disincomes {
+    width: 50%;
+    margin-top: 40px;
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 355px;
+    padding: 10px;
+  }
+  
+@media screen and (max-width:769px) {
+    .mci {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .fi{
+        margin-top: 10px !important;
+        margin: auto;
+        width: 75%;
+    }
+
+    .disincomes {
+        width: 100% !important;
+        overflow: hidden;
+        max-height: none;
+        margin: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
+    .incomebut{
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .form select{
+        width: 35%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .form textarea{
+        width: 75%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .mobspan{
+        display: block;
+    }
+}
+
+.mainincomeitem {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f0f3;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.incheading {
+    color: #6e9f41 !important;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.expheading {
+    color: #ff0000 !important;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.otheritems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #222260;
+}
+
+.fa-brands,
+.fa-money-bill,
+.fa-earth-americas,
+.fa-arrow-trend-up,
+.fa-users-between-lines,
+.fa-bitcoin,
+.fa-cc-visa,
+.fa-youtube,
+.fa-piggy-bank,
+.fa-book-open,
+.fa-bowl-food,
+.fa-briefcase-medical,
+.fa-tv,
+.fa-utensils,
+.fa-shirt,
+.fa-earth-americas,
+.fa-circle-dot {
+    font-size: 2.5rem;
+    color: #222260;
+}
+
+.iibutton {
+    border-radius: 50%;
+    background-color: #222260;
+    color: white;
+    padding: 10px;
+    align-items: center;
+}
+
+.iibutton:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width:769px) {
+    .fa-brands {
+        font-size: 2rem;
+    }
+
+    .incheading {
+        text-align: center;
+    }
+
+    .otheritems {
+        flex-direction: column;
+    }
+    .otheritems p{
+        margin-top: 5px;
+    }
+    .Toastify__toast{
+        width: 300px !important;
+    }
+}
